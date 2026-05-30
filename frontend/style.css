@@ -1,0 +1,140 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  height: 100vh;
+  font-family: 'Segoe UI', sans-serif;
+  background: #0f1117;
+  color: #e0e0e0;
+}
+
+#sidebar {
+  width: 280px;
+  background: #1a1d27;
+  padding: 24px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  overflow-y: auto;
+  z-index: 1000;
+}
+
+h1 {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #ffffff;
+  line-height: 1.3;
+}
+
+.subtitle {
+  font-size: 0.75rem;
+  color: #7c83a0;
+  margin-top: -14px;
+}
+
+.control-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.control-group label {
+  font-size: 0.75rem;
+  color: #7c83a0;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+input[type="range"] {
+  width: 100%;
+  accent-color: #4f8ef7;
+}
+
+#timestepLabel {
+  font-size: 0.85rem;
+  color: #4f8ef7;
+  font-weight: 600;
+}
+
+button {
+  background: #4f8ef7;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  font-weight: 600;
+  transition: background 0.2s;
+}
+
+button:hover {
+  background: #3a7be0;
+}
+
+.legend {
+  background: #12151f;
+  border-radius: 8px;
+  padding: 14px;
+}
+
+.legend h3 {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  color: #7c83a0;
+  margin-bottom: 10px;
+  letter-spacing: 0.05em;
+}
+
+.legend div {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.82rem;
+  margin-bottom: 6px;
+}
+
+.dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.dot.green  { background: #2ecc71; }
+.dot.yellow { background: #f39c12; }
+.dot.red    { background: #e74c3c; }
+
+#stats {
+  background: #12151f;
+  border-radius: 8px;
+  padding: 14px;
+}
+
+#stats h3 {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  color: #7c83a0;
+  margin-bottom: 10px;
+  letter-spacing: 0.05em;
+}
+
+#stats p {
+  font-size: 0.82rem;
+  margin-bottom: 6px;
+  color: #b0b8d0;
+}
+
+#stats span {
+  color: #4f8ef7;
+  font-weight: 600;
+}
+
+#map {
+  flex: 1;
+  height: 100vh;
+}

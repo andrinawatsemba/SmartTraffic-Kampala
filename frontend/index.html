@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>SmartTraffic Kampala</title>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"/>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+  <div id="sidebar">
+    <h1>SmartTraffic Kampala</h1>
+    <p class="subtitle">GNN + LSTM Traffic Prediction</p>
+
+    <div class="control-group">
+      <label>Timestep (0 = Mon 12am)</label>
+      <input type="range" id="timestepSlider" min="0" max="166" value="0"/>
+      <span id="timestepLabel">Hour 0</span>
+    </div>
+
+    <button id="loadBtn">Load Predictions</button>
+
+    <div class="legend">
+      <h3>Congestion Level</h3>
+      <div><span class="dot green"></span> Low (&lt; 0.35)</div>
+      <div><span class="dot yellow"></span> Moderate (0.35 – 0.65)</div>
+      <div><span class="dot red"></span> High (&gt; 0.65)</div>
+    </div>
+
+    <div id="stats">
+      <h3>Stats</h3>
+      <p>Nodes loaded: <span id="nodeCount">—</span></p>
+      <p>Avg congestion: <span id="avgCongestion">—</span></p>
+      <p>High congestion: <span id="highCount">—</span></p>
+    </div>
+  </div>
+
+  <div id="map"></div>
+
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
