@@ -8,8 +8,8 @@ Try it here: [huggingface.co/spaces/Andrina/SmartTraffic-Kampala](https://huggin
 
 ## What it does
 Predicts road congestion across Kampala's 17,762 road nodes using:
-- **GNN (GraphSAGE)** — learns spatial dependencies between connected roads
-- **LSTM** — learns temporal patterns (rush hours, weekly cycles)
+- **GNN (GraphSAGE)**  learns spatial dependencies between connected roads
+- **LSTM**  learns temporal patterns (rush hours, weekly cycles)
 
 ## Results
 - MAE: 0.0813 | RMSE: 0.1018 ( trained on simulated data)
