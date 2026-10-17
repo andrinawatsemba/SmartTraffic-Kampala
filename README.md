@@ -3,7 +3,9 @@
 A hybrid GNN+LSTM traffic prediction system for Kampala, Uganda.
 # Live Demo
 Try it here: [huggingface.co/spaces/Andrina/SmartTraffic-Kampala](https://huggingface.co/spaces/Andrina/SmartTraffic-Kampala)
-![SmartTraffic Kampala map](SmartTraffic-Kampala/screenshot_smart_traffic.jpeg)
+
+![SmartTraffic Kampala map](screenshot_smart_traffic.jpeg)
+
 ## What it does
 Predicts road congestion across Kampala's 17,762 road nodes using:
 - **GNN (GraphSAGE)** — learns spatial dependencies between connected roads
